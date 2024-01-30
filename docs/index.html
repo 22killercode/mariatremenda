@@ -10,6 +10,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Incluye la biblioteca Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!-- Incluye la biblioteca Bootstrap JS (opcional, pero puede ser necesaria para ciertas funcionalidades) -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 
@@ -47,6 +53,7 @@
     <ul class="links">
         <li><a href="index.html">Home</a></li>
         <li><a href="generic.html">Jean´s</a></li>
+		<li><a href="elements.html">Shorts</a></li>
         <li><a href="elements.html">Camperas</a></li>
         <li><a href="generic.html">Zapatos</a></li>
         <li><a href="elements.html">Custom clothes</a></li>
@@ -69,21 +76,27 @@
 			to the full filename of your image. This is used in each section to set
 			the background image.
 		-->
+		<!-- pagina inicial -->
 		<section id="banner" class="bg-img" data-bg="banner.jpg">
-			<div class="inner" id="logo-container" style="margin-top: -20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+			<div class="inner" id="logo-container" style="margin-top: -40px; 
+														display: flex; 
+														flex-direction: column; 
+														align-items: center; 
+														text-align: center;">
 				<div style="opacity: 0.85;">
 					<header>
 						<img style="
 							width: auto !important;
 							border-radius: 100% !important;
-							max-width: 80%;"
+							max-width: 60%;
+							height:auto;"
 							src="images/logo.jpg" alt="Maria Tremenda" id="logo-image">
 					</header>
 				</div>
-				<div style="font-family: Lobster, cursive !important">
+				<div style="font-family: Lobster, cursive !important; margin: 0.5rem 0;">
 					<h2>Exclusive Clothes</h2>
 				</div>
-				<ul class="icons" style="margin-top: -30px !important; display: flex; list-style: none; padding: 0;">
+				<ul class="icons" style="margin-top: -10px !important; display: flex; list-style: none; padding: 0;">
 					<li style="margin-right: 1rem;"><a href="#" class="icon round fa-whatsapp"><span class="label">whatsapp</span></a></li>
 					<li style="margin-right: 1rem;"><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
 					<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
@@ -102,23 +115,47 @@
 		
 		
 
-		<!-- One -->
-			<section id="one" class="wrapper post bg-img" data-bg="banner2.jpg">
+		<!-- Jeans -->
+			<section id="one" class="wrapper post bg-img" data-bg="esquemajeans.jpg">
 				<div class="inner">
 					<article class="box">
-						<header>
-							<h2>Nibh non lobortis mus nibh</h2>
-							<p>01.01.2017</p>
+						<header >
+							<h2 >Jeans´s</h2>
 						</header>
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+						<div class="content" >
+							<div class="card" style="background: linear-gradient(to right, #101010, #9f9496) !important; border-radius: 1rem;">
+								<div id="miCarousel" class="carousel slide" data-ride="carousel">
+									<div class="carousel-inner">
+										<!-- Tus elementos carousel-item van aquí -->
+										<div class="carousel-item active">
+											<img style="height:300px;width: auto; border-radius: 4rem; margin-top:1rem" src="images/jeanstachasnegro.webp" class="card-img-top" >
+										</div>
+										<div class="carousel-item">
+											<img style="height:300px;width: auto; border-radius: 4rem; margin-top:1rem" src="images/jeanbijuo.jpg" class="card-img-top">
+										</div>
+										<div class="carousel-item">
+											<img style="height:300px;width: auto; border-radius: 4rem; margin-top:1rem" src="images/jeanaraña.jpg" class="card-img-top">
+										</div>
+										<div class="carousel-item">
+											<img style="height:300px;width: auto; border-radius: 4rem; margin-top:1rem" src="images/jeanbijuo.jpg" class="card-img-top">
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<h5 class="card-title" style="color: black !important;">Exclusives Jen´s</h5>
+									<p class="card-text">
+										Exclusive design for exclusive women.
+									</p>
+								</div>
+							</div>
 						</div>
-						<footer>
-							<a href="generic.html" class="button alt">Learn More</a>
+						<br>
+						<footer align="left" >
+							<a style="color: black !important" href="generic.html" class="button alt">Ver colección</a>
 						</footer>
 					</article>
 				</div>
-				<a href="#two" class="more">Learn More</a>
+				<a href="#two" class="more">botun</a>
 			</section>
 
 		<!-- Two -->
