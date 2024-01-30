@@ -69,31 +69,38 @@
 			to the full filename of your image. This is used in each section to set
 			the background image.
 		-->
-			<section id="banner" class="bg-img" data-bg="banner.jpg">
-				<div class="inner" style="margin-top: -20px;">
-					<div style="opacity: 0.85;">
-						<header>
-							<img style=" 
-										height: 400px !important;
-										width: auto !important; 
-										border-radius: 100% !important;
-										left:-10px !important;"
-							src="images/logo.jpg" 	alt="Maria Tremenda" >
-						</header>
-					</div>
-					<div style="font-family: Lobster, cursive !important">
-						<h2>Exclusive Clothes</h2>
-					</div>
-					<ul class="icons" style="margin-top: -30px !important">
-						<li><a href="#" class="icon round fa-whatsapp"><span class="label">whatsapp</span></a></li>
-						<span></span>
-						<li style="margin: 0 1rem 0 1rem ;"><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
-						<span></span>
-						<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
-					</ul>
+		<section id="banner" class="bg-img" data-bg="banner.jpg">
+			<div class="inner" id="logo-container" style="margin-top: -20px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+				<div style="opacity: 0.85;">
+					<header>
+						<img style="
+							width: auto !important;
+							border-radius: 100% !important;
+							max-width: 80%;"
+							src="images/logo.jpg" alt="Maria Tremenda" id="logo-image">
+					</header>
 				</div>
-				<a href="#one" class="more">Learn More</a>
-			</section>
+				<div style="font-family: Lobster, cursive !important">
+					<h2>Exclusive Clothes</h2>
+				</div>
+				<ul class="icons" style="margin-top: -30px !important; display: flex; list-style: none; padding: 0;">
+					<li style="margin-right: 1rem;"><a href="#" class="icon round fa-whatsapp"><span class="label">whatsapp</span></a></li>
+					<li style="margin-right: 1rem;"><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+			</div>
+			<a href="#one" class="more">Learn More</a>
+		</section>
+		
+		<style>
+			@media (orientation: portrait) {
+				#logo-image {
+					height: 80% !important;
+				}
+			}
+		</style>
+		
+		
 
 		<!-- One -->
 			<section id="one" class="wrapper post bg-img" data-bg="banner2.jpg">
